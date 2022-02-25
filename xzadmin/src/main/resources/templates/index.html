@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="/layuimini-2/lib/layui-v2.5.5/css/layui.css" media="all"/>
+</head>
+<body>
+<!--列表-->
+<div id="vueContainer" style="width:80%;margin: auto">
+    <h3>vue+laypage分页解析后台json数据</h3>
+    <table class="layui-table">
+        <thead>
+        <th>ID</th>
+        <th>标题</th>
+        <th>分类</th>
+        <th>发布时间</th>
+        </thead>
+        <tbody v-for="item in items">
+        <td>{{item.id}}</td>
+        <td><a :href="'/article?id='+item.id" style="color: blue">
+            <!-- <p>
+                 <img style="max-width: 200px;max-height: 200px" v-bind:src="item.imgurl+'/static/image/1.jpg'">
+             </p>-->
+            <p>{{item.title}}</p>
+        </a>
+        </td>
+        <td>{{item.class_name}}</td>
+        <td>{{item.create_time}}</td>
+        </tbody>
+    </table>
+</div>
+
+<!--分页容器-->
+<div id="pagination" style="width: 80%;margin: auto"></div>
+
+<script src="/common/js/jquery-3.2.1.js"></script>
+<script src="/layuimini-2/lib/layui-v2.5.5/layui.js"></script>
+<script src="/common/js/vue.js"></script>
+<script src="/list.js"></script>
+</body>
+</html>
