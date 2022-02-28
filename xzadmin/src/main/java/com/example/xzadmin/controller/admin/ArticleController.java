@@ -2,14 +2,12 @@ package com.example.xzadmin.controller.admin;
 
 import com.example.xzadmin.bean.Article;
 import com.example.xzadmin.service.ArticleService;
-import com.sun.org.apache.xpath.internal.operations.String;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import java.util.Map;
 
 @Controller

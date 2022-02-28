@@ -1,8 +1,6 @@
 package com.example.xzadmin.service;
 
 import com.example.xzadmin.bean.Article;
-import com.sun.org.apache.xpath.internal.operations.String;
-
 import java.util.Map;
 
 public interface ArticleService {
